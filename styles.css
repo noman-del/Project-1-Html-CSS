@@ -1,0 +1,72 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* About & Skills Sections */
+#about, #skills {
+    color: #333;
+}
+
+/* Skills Section: Inline and Styled */
+#skills .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+#skills .col-md-3, #skills .col-md-2 {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    flex-grow: 1;
+}
+
+/* Project Cards */
+.card {
+    border: none;
+    transition: transform 0.3s;
+    height: 100%; /* Ensures all cards are the same height */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+#contact {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 3rem 0;
+}
+
+#contact a {
+    color: #ffdd57; /* Brighter yellow for contrast */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #555;
+    color: #f8f9fa;
+}
